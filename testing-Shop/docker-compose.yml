@@ -1,0 +1,9 @@
+version: '3.8'  # Especificamos la versión de Docker Compose
+
+services:  # Definimos los servicios que vamos a levantar
+  shop:
+    build: .  # Construye la imagen usando el Dockerfile en la raíz del proyecto
+    volumes:
+      - .:/src  # Sincroniza el directorio actual con el directorio /src en el contenedor
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development  # Configura el entorno de desarrollo para ASP.NET Core
