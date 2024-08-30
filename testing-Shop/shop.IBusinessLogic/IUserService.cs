@@ -1,5 +1,7 @@
 ﻿namespace shop.IBusinessLogic;
+
 using shop.Domain;
+
 public interface IUserService
 {
     User CreateUser(string email, string address, string password);

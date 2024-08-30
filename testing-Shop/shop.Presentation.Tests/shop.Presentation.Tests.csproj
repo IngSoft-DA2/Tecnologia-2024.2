@@ -22,9 +22,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\shop.Domain\shop.Domain.csproj" />
+    <ProjectReference Include="..\shop.Presentation\shop.Presentation.csproj" />
     <ProjectReference Include="..\shop.BusinessLogic\shop.BusinessLogic.csproj" />
     <ProjectReference Include="..\shop.IBusinessLogic\shop.IBusinessLogic.csproj" />
+    <ProjectReference Include="..\shop.Domain\shop.Domain.csproj" />
   </ItemGroup>
 
 </Project>
