@@ -6,8 +6,15 @@ namespace shop.WebApi.Controllers
 {
     [ApiController]
     [Route("products")]
-    public sealed class ProductController(IProductService _productService) : ControllerBase
+    public sealed class ProductsController : ControllerBase
     {
+        IProductService _productService;
+
+        public ProductsController(IProductService productService)
+        {
+            _productService = productService;
+        }
+
         [HttpPost]
         public ActionResult<Product> Create(Product product)
         {
