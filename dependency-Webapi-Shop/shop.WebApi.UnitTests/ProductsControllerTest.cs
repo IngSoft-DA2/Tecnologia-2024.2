@@ -8,16 +8,16 @@ using Microsoft.AspNetCore.Mvc;
 namespace shop.WebApi.UnitTests
 {
     [TestClass]
-    public sealed class ProductControllerTest
+    public sealed class ProductsControllerTest
     {
         private Mock<IProductService> _productServiceMock;
-        private ProductController _controller;
+        private ProductsController _controller;
 
         [TestInitialize]
         public void Initialize()
         {
             _productServiceMock = new Mock<IProductService>(MockBehavior.Strict);
-            _controller = new ProductController(_productServiceMock.Object);
+            _controller = new ProductsController(_productServiceMock.Object);
         }
 
         #region Create
