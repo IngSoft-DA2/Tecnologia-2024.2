@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = shop.Presentation.Tests
-build_property.ProjectDir = /home/maxhalty/projects/Tecnologia-2024.2/testing-Shop/shop.Presentation.Tests/
+build_property.ProjectDir = /workspaces/testing-Shop/shop.Presentation.Tests/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
