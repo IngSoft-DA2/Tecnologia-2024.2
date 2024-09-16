@@ -2,9 +2,9 @@ using shop.WebApi.Models;
 
 namespace shop.WebApi.Services
 {
-    public class ProductService : IProductService, IDisposable
+    public class ProductService : IProductService
     {
-        private static readonly List<Product> _products = [];
+        private readonly List<Product> _products = [];
 
         public Product Add(Product product)
         {
@@ -61,7 +61,5 @@ namespace shop.WebApi.Services
                 productSaved.Description = description;
             }
         }
-
-        public void Dispose() => _products.Clear();
     }
 }
