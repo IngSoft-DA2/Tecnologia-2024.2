@@ -22,17 +22,16 @@ namespace shop.WebApi.UnitTests
             var builder = new WebHostBuilder()
                 .ConfigureServices(services =>
                 {
-                    services.AddControllers()
+                    services.AddControllers(options =>
+                        {
+                            options.Filters.Add(typeof(CustomExceptionFilter));
+                        })
                         .AddApplicationPart(typeof(ProductsController).Assembly);
 
                     services.AddSingleton<IProductService, ProductService>();
-
-                    services.AddExceptionHandler<CustomExceptionHandler>();
-                    services.AddProblemDetails();
                 })
                 .Configure(app =>
                 {
-                    app.UseExceptionHandler();
                     app.UseRouting();
                     app.UseEndpoints(endpoints =>
                     {
@@ -57,7 +56,7 @@ namespace shop.WebApi.UnitTests
             var response = _client.PostAsync("products", content).Result;
 
             // Assert
-            response.StatusCode.Should().Be(System.Net.HttpStatusCode.InternalServerError);
+            response.StatusCode.Should().Be(System.Net.HttpStatusCode.BadRequest);
         }
         #endregion
         
