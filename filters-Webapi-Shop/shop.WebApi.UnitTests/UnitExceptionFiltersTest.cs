@@ -8,21 +8,18 @@ using Moq;
 namespace shop.WebApi.UnitTests
 {
     [TestClass]
-    public sealed class UnitFiltersServerTest
+    public sealed class UnitExceptionFiltersTest
     {
-        #region Create
-
         #region Handled Error
         [TestMethod]
         public void OnException_InvokeException_ReturnsBadRequest()
         {
             // Arrange 
-            var _logger = new Mock<ILogger<CustomExceptionFilter>>();;
+            var _logger = new Mock<ILogger<CustomExceptionFilter>>();
 
             var customExceptionFilter = new CustomExceptionFilter(_logger.Object);
 
             var httpContext = new DefaultHttpContext();
-
             var actionContext = new ActionContext(httpContext, new(), new(), new());
             var exceptionContext = new ExceptionContext(actionContext, new List<IFilterMetadata>())
             {
@@ -39,8 +36,6 @@ namespace shop.WebApi.UnitTests
             var message = exception.Value as ProblemDetails;
             Assert.AreEqual(400, message!.Status);
         }
-        #endregion
-        
         #endregion
     }
 }

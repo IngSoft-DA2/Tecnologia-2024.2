@@ -11,7 +11,7 @@ using Microsoft.Extensions.DependencyInjection;
 namespace shop.WebApi.UnitTests
 {
     [TestClass]
-    public sealed class FiltersServerTest
+    public sealed class IntegrationFiltersTest
     {
         private TestServer _server;
         private HttpClient _client;
