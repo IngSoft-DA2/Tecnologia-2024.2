@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace shop.WebApi.Controllers
@@ -18,18 +19,38 @@ namespace shop.WebApi.Controllers
             _context = context;
         }
 
+
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Product>>> GetProducts([FromQuery] PaginationParams paginationParams)
         {
             var query = _context.Products.AsQueryable();
 
-            // funcionalidad de paginado
             var pagedData = await query
                 .Skip((paginationParams.PageNumber - 1) * paginationParams.PageSize)
                 .Take(paginationParams.PageSize)
                 .ToListAsync();
 
             return Ok(pagedData);
+        }
+
+
+        [HttpGet("all")]
+        public async Task<ActionResult<IEnumerable<Product>>> GetAllProducts()
+        {
+            var allProducts = await _context.Products.ToListAsync();
+            return Ok(allProducts);
+        }
+
+
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Product>> GetProduct(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return Ok(product);
         }
     }
 }

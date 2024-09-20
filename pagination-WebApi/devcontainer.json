@@ -1,19 +1,19 @@
 {
-    "name": "Shop",
-    "dockerComposeFile": "docker-compose.yml",
-    "service": "webapi",
+    "name": "Ecommerce",  
+    "dockerComposeFile": "docker-compose.yml", 
+    "service": "webapi", 
     "workspaceFolder": "/src",
     "customizations": {
-        "vscode": {
-            "extensions": [
-                "ms-dotnettools.csharp",
-                "ms-azuretools.vscode-docker",
-                "ms-razortools.vscode-docker",
-                "ms-mssql.mssql"
-            ],
-            "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
-            }
+      "vscode": {
+        "extensions": [
+          "ms-dotnettools.csharp",
+          "ms-azuretools.vscode-docker",
+          "ms-razor.vscode",
+          "ms-mssql.mssql" 
+        ],
+        "settings": {
+          "terminal.integrated.defaultProfile.linux": "bash" 
         }
+      }
     }
-}
+  }
