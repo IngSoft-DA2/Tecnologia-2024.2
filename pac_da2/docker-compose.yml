@@ -1,0 +1,11 @@
+version: '3.8'  # Especificamos la versión de Docker Compose
+
+services:  # Definimos los servicios que vamos a levantar
+  pac:
+    build: .  # Construye la imagen usando el Dockerfile en la raíz del proyecto
+    volumes:
+      - .:/src  # Sincroniza el directorio actual con el directorio /src en el contenedor
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development  # Configura el entorno de desarrollo para ASP.NET Core
+    ports:
+      - "8000:5000"  # Mapea el puerto 5000 del contenedor al puerto 8000 en la máquina local
