@@ -108,4 +108,9 @@ public class EventService : IEventService
             throw new InvalidOperationException($"No se encontró un evento con el ID {eventId}.");
         return eventEntity.AvailableSlots;
     }
+
+    public bool IsAuthenticated(string token)
+    {
+        return !string.IsNullOrWhiteSpace(token);
+    }
 }

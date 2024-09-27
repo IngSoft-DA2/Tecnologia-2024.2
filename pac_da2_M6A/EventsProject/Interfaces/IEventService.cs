@@ -1,3 +1,5 @@
+using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
+
 public interface IEventService
 {
     void CreateEvent(Event eventEntity);
@@ -8,4 +10,5 @@ public interface IEventService
     void RegisterUserToEvent(int eventId, string firstName, string lastName);
     void CancelRegistration(int eventId, string firstName, string lastName);
     int GetAvailableSlots(int eventId);
+    bool IsAuthenticated(string token);
 }

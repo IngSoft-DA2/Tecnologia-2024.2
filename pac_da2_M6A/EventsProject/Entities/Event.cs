@@ -6,5 +6,6 @@ public class Event
     public string? Location { get; set; }
     public int Capacity { get; set; }
     public int AvailableSlots { get; set; }
+
     public List<Registration> Registrations { get; set; } = new List<Registration>();
 }
