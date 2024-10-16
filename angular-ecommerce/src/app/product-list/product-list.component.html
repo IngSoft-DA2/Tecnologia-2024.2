@@ -1,0 +1,14 @@
+<div class="product-list">
+  <app-category-filter (categoryChange)="onCategoryChange($event)"></app-category-filter>
+
+  <h2>Lista de Productos</h2>
+  <div *ngFor="let product of filteredProducts" class="product-item">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+
+
+  <h2>Lista de Productos desde API</h2>
+  <div *ngFor="let product of apiProducts" class="product-item">
+    <app-product-item [product]="product"></app-product-item>
+  </div>
+</div>

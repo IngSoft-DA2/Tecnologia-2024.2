@@ -1,0 +1,23 @@
+.category-filter {
+  text-align: left;
+  margin-bottom: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.category-filter h3 {
+  font-size: 18px;
+  color: #333;
+}
+
+.category-filter div {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+label {
+  font-size: 16px;
+  color: #666;
+}

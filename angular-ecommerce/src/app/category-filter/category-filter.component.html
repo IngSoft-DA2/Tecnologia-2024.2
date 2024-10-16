@@ -1,0 +1,7 @@
+<div class="category-filter">
+  <h3>Filtrar por Categoría</h3>
+  <div *ngFor="let category of categories">
+    <input type="checkbox" (change)="onCategoryChange(category, $event)">
+    <label>{{ category }}</label>
+  </div>
+</div>

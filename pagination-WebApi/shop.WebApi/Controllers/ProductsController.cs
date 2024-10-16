@@ -52,6 +52,14 @@ namespace shop.WebApi.Controllers
             }
             return Ok(product);
         }
+
+        [HttpPost]
+        public async Task<ActionResult<Product>> PostProduct(Product product)
+        {
+            _context.Products.Add(product);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction("GetProduct", new { id = product.Id }, product);
+        }
     }
 }
 
@@ -65,5 +73,6 @@ public class Product
 {
     public int Id { get; set; }
     public string Name { get; set; }
+    public string Category { get; set; }
     public float Price { get; set; }
 }
