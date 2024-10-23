@@ -7,7 +7,7 @@ import { Product } from './models/Product';
   providedIn: 'root'
 })
 export class ProductService {
-  private apiUrl = 'https://b2af-167-62-224-159.ngrok-free.app/api/products'; 
+  private apiUrl = 'https://48f5-186-50-216-182.ngrok-free.app/api/products'; 
 
   constructor(private http: HttpClient) {}
 
@@ -22,5 +22,9 @@ export class ProductService {
 
   addProduct(product: Product): Observable<Product> {
     return this.http.post<Product>(this.apiUrl, product);
+  }
+
+  updateProduct(product: Product): Observable<Product> {
+    return this.http.put<Product>(`${this.apiUrl}/${product.id}`, product);
   }
 }

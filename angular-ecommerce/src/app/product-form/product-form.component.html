@@ -1,0 +1,13 @@
+<h2>Crear un nuevo producto</h2>
+<form (ngSubmit)="onSubmit()">
+  <label for="name">Nombre:</label>
+  <input type="text" id="name" [(ngModel)]="newProduct.name" name="name" required>
+
+  <label for="category">Categoría:</label>
+  <input type="text" id="description" [(ngModel)]="newProduct.category" name="category" required>
+
+  <label for="price">Precio:</label>
+  <input type="number" id="price" [(ngModel)]="newProduct.price" name="price" required>
+
+  <button type="submit">Agregar Producto</button>
+</form>

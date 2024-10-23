@@ -1,21 +1,23 @@
-h3 {
+.product-item {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 8px;
+  text-align: center;
+  background-color: #f9f9f9;
+  transition: box-shadow 0.3s;
+}
+
+.product-item:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-name {
   font-size: 18px;
-  color: #333;
+  font-weight: bold;
 }
-p {
+
+.product-price {
+  color: #4CAF50;
   font-size: 16px;
-  color: #666;
-}
-
-button {
-  padding: 10px 20px;
-  background-color: #007BFF;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: #0056b3;
 }

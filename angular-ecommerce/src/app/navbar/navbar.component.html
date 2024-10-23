@@ -1,0 +1,10 @@
+<nav>
+  <ul>
+    <li><a routerLink="/">Inicio</a></li>
+    <li><a routerLink="/products">Productos</a></li>
+    <li><a routerLink="/cart">Carrito</a></li>
+    <li><a routerLink="/new-product">Nuevo Producto</a></li>
+    <li *ngIf="!authService.isLoggedIn()"><a routerLink="/login">Login</a></li>
+    <li *ngIf="authService.isLoggedIn()"><a (click)="logout()">Logout</a></li>
+  </ul>
+</nav>
