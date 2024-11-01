@@ -1,0 +1,15 @@
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/bin/Debug/net8.0/Analisis
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/bin/Debug/net8.0/Analisis.deps.json
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/bin/Debug/net8.0/Analisis.runtimeconfig.json
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/bin/Debug/net8.0/Analisis.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/bin/Debug/net8.0/Analisis.pdb
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.AssemblyInfoInputs.cache
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.AssemblyInfo.cs
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.csproj.CoreCompileInputs.cache
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.sourcelink.json
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/refint/Analisis.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.pdb
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/Analisis.genruntimeconfig.cache
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Analisis/obj/Debug/net8.0/ref/Analisis.dll

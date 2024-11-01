@@ -1,0 +1,12 @@
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/bin/Debug/net8.0/Operaciones.deps.json
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/bin/Debug/net8.0/Operaciones.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/bin/Debug/net8.0/Operaciones.pdb
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.GeneratedMSBuildEditorConfig.editorconfig
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.AssemblyInfoInputs.cache
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.AssemblyInfo.cs
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.csproj.CoreCompileInputs.cache
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.sourcelink.json
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/refint/Operaciones.dll
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/Operaciones.pdb
+/Users/alexanderwieler/Documents/ORT/D2-M5B-AN-2024.1/Reflection/Operaciones/obj/Debug/net8.0/ref/Operaciones.dll
