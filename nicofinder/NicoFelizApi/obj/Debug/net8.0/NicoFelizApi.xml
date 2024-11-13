@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>NicoFelizApi</name>
+    </assembly>
+    <members>
+        <member name="T:NicoFelizApi.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:NicoFelizApi.Migrations.AddPlayerNameToPartida">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddPlayerNameToPartida.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddPlayerNameToPartida.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddPlayerNameToPartida.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:NicoFelizApi.Migrations.AddScoreToPartida">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddScoreToPartida.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddScoreToPartida.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:NicoFelizApi.Migrations.AddScoreToPartida.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,6 @@
+@NicoFelizApi_HostAddress = http://localhost:5147
+
+GET {{NicoFelizApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
