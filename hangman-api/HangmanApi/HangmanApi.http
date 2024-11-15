@@ -1,0 +1,6 @@
+@HangmanApi_HostAddress = http://localhost:5117
+
+GET {{HangmanApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

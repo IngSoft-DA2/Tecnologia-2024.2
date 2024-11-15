@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "O0hCdjURVRkc7pCeNzVf7DmXXayXySYvbxnsE5ryiPE=",
+  "Source": "HangmanApi",
+  "BasePath": "_content/HangmanApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

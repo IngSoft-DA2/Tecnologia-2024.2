@@ -1,0 +1,21 @@
+version: '3.8'  # Especificamos la versión de Docker Compose
+
+services:  # Definimos los servicios que vamos a levantar
+  webapi:
+    build: .  # Construye la imagen usando el Dockerfile en la raíz del proyecto
+    volumes:
+      - .:/src  # Sincroniza el directorio actual con el directorio /src en el contenedor
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development  # Configura el entorno de desarrollo para ASP.NET Core
+    depends_on:
+      - db  # Define una dependencia en el servicio de base de datos
+    ports:
+      - "8000:5000"  # Mapea el puerto 5000 del contenedor al puerto 8000 en la máquina local
+
+  db:
+    image: "mcr.microsoft.com/mssql/server:2019-latest"  # Usa la imagen oficial de SQL Server
+    environment:
+      SA_PASSWORD: "YourStrong@Passw0rd"  # Configura la contraseña del administrador
+      ACCEPT_EULA: "Y"  # Acepta los términos de la licencia de SQL Server
+    ports:
+      - "1433:1433"  # Expone el puerto 1433 de SQL Server en el contenedor
